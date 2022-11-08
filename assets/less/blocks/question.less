@@ -1,0 +1,85 @@
+.question {
+    background-image: url(../img/question-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrapper {
+        @media @mobile {
+            padding: 35px 0 40px 0;
+        }
+        @media @tablet {
+            padding: 40px 0 40px 0;
+        }
+        @media @desktop {
+            padding: 60px 0 70px 0;
+        }
+    }
+    &__header {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 35px;
+        @media @mobile {
+            text-transform: uppercase;
+        }
+        @media @desktop {
+            margin-bottom: 50px;
+        }
+    }
+    &__form {
+        @media @tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media @desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 40px;
+        }
+    }
+    &__body {
+        position: relative;
+        @media @mobile {
+            margin-bottom: 15px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: 94%;
+            background-color: #f9f9f9;
+            border-right: 1px solid #979797;
+            z-index: 1;
+            top: 2px;
+            left: 2px;
+            bottom: 2px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+        &--user::before {
+            background-image: url(../img/user.png);
+        }
+        &--phone::before {
+            background-image: url(../img/smartphone.png);
+        }
+    }
+    &__item {
+        border: 1px solid #979797;
+        background-color: #ffffff;
+        position: relative;
+        color: #bebebe;
+        padding: 20px 5px 20px 30%;
+        width: 100%;
+        height: 100%;
+    }
+    &__button {
+        @media @mobile {
+            margin-top: 30px;
+        }
+        @media @tablet {
+            grid-column-start: 1;
+            grid-column-end: -1;
+            width: 40%;
+            margin: 0 auto;
+        }
+    }
+}

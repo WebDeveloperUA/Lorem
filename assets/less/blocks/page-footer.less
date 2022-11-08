@@ -1,0 +1,157 @@
+.page-footer {
+    &__wrapper {
+        padding: 50px 0 60px 0;
+        @media @desktop {
+            display: flex;
+            justify-content: space-between;
+        }
+        @media @tablet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 10px;
+            grid-auto-flow: dense;
+        }
+        @media @mobile {
+            padding: 35px 0 35px 0;
+        }
+    }
+    &__column {
+        &:last-child {
+            @media @mobile {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+        &--social {
+            @media @tablet {
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+        }
+        @media @mobile {
+            padding-top: 15px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+    &__logo {
+        margin-bottom: 20px;
+        display: block;
+        @media @mobile {
+            text-align: center;
+        }
+    }
+    &__heading {
+        @media @desktop {
+            font-size: 20px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+        @media @mobile {
+            text-align: center;
+        }
+        &--social {
+            @media @tablet {
+                display: none;
+            }
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &--payment {
+            padding-left: 30px;
+        }
+        &--social {
+            @media @tablet {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        margin-bottom: 20px;
+        @media @mobile {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        & span {
+            position: relative;
+        }
+        &--policy {
+            color: #a8a9ab;
+            @media @mobile {
+                display: none;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &--social {
+            padding-left: 30px;
+        }
+        &--social span::before,
+        &--payment span::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 25px;
+            height: 25px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &--youtube span::before {
+            background-image: url(../img/youtube.png);
+        }
+        &--vk span::before {
+            background-image: url(../img/twitter.png);
+        }
+        &--facebook span::before {
+            background-image: url(../img/facebook.png);
+        }
+        &--instagram span::before {
+            background-image: url(../img/instagram.png);
+        }
+        &--card span::before {
+            background-image: url(../img/card.png);
+        }
+        &--bitcoin span::before {
+            background-image: url(../img/bitcoin.png);
+        }
+        &--revolut span::before {
+            background-image: url(../img/revolut-logo.png);
+        }
+        &--bank span::before {
+            background-image: url(../img/bank.png);
+        }
+    }
+    &__copyright {
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+        font-size: 14px;
+        @media @desktop {
+            width: 90%;
+            margin: 0 auto;
+            padding: 15px 0 35px 0;
+        }
+        @media @tablet {
+            width: 90%;
+            margin: 0 auto;
+            padding: 15px 0 35px 0;
+        }
+        @media @mobile {
+            padding: 25px 0 30px 0;
+        }
+        & span {
+            display: block;
+        }
+        & p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

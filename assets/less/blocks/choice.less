@@ -1,0 +1,125 @@
+.choice {
+    position: relative;
+    overflow: hidden;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        @media @mobile {
+            flex-direction: column;
+        }
+    }
+    &__left {
+        width: 50%;
+        position: relative;
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    &__back--left {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        right: 0;
+        min-width: 50vw;
+        min-height: 100%;
+        width: 50vw;
+        height: 100%;
+        @media @mobile {
+            min-width: 100vw;
+            right: -15px;
+            width: 100%;
+        }
+    }
+    &__right {
+        width: 50%;
+        position: relative;
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    &__back--right {
+        position: absolute;
+        object-fit: contain;
+        bottom: 0;
+        left: 0;
+        min-width: 50vw;
+        min-height: 100%;
+        width: 50vw;
+        height: 100%;
+        @media @mobile {
+            min-width: 100vw;
+            right: -15px;
+            width: 100%;
+        }
+    }
+    &__wrapper {
+        @media @mobile {
+            padding: 35px 0 35px 0;
+        }
+        @media @tablet {
+            padding: 80px 0 80px 0;
+        }
+        @media @desktop {
+            padding: 170px 0 170px 0;
+        }
+    }
+    &__header {
+        @media @mobile {
+            text-align: center;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+        }
+        @media @tablet {
+            margin-bottom: 35px;
+        }
+        @media @desktop {
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 45px;
+        }
+    }
+    &__description {
+        @media @mobile {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        @media @tablet {
+            margin-bottom: 45px;
+        }
+        @media @desktop {
+            font-size: 16px;
+            margin-bottom: 65px;
+        }
+    }
+    &__customer {
+        z-index: 100;
+        position: relative;
+        @media @mobile {
+            margin-bottom: 70px;
+        }
+        @media @desktop {
+            width: 475px;
+        }
+        @media @tablet {
+            margin-right: 55px;
+        }
+    }
+    &__partner {
+        position: relative;
+        @media @tablet {
+            text-align: right;
+        }
+        @media @desktop {
+            width: 475px;
+            text-align: end;
+            margin-left: auto;
+        }
+        @media @tablet {
+            margin-left: 55px;
+        }
+    }
+    &__button {
+        &:hover {
+        }
+    }
+}

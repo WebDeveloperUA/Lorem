@@ -1,0 +1,152 @@
+.request {
+    // background-color: #162438;
+    color: black;
+    background-image: url(../img/adress-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media @mobile {
+        background-position: right top;
+    }
+    &__wrapper {
+        padding: 50px 0 40px 0;
+        @media @desktop {
+            padding: 110px 0 100px 0;
+        }
+    }
+    &__header {
+        text-align: center;
+        font-size: 44px;
+        margin-bottom: 15px;
+        @media @desktop {
+            font-size: 60px;
+            margin-bottom: 35px;
+        }
+    }
+    &__description {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 35px;
+        @media @desktop {
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+    }
+    &__label {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        position: relative;
+        @media @desktop, @tablet {
+            width: 50%;
+            margin: 0 auto;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 21px;
+            height: 21px;
+            background-image: url(../img/search.png);
+            background-size: contain;
+            top: 21px;
+            right: 23px;
+        }
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        padding: 15px 35px;
+        background-color: transparent;
+        @media @desktop {
+            font-size: 20px;
+        }
+    }
+    &__buttons {
+        margin-top: 25px;
+        @media @tablet {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        @media @desktop {
+            width: 50%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+            margin-top: 60px;
+        }
+    }
+    &__button {
+        padding: 15px 35px;
+        padding-left: 55px;
+        color: white;
+        border-radius: 5px;
+        position: relative;
+        display: block;
+        line-height: 32px;
+        @media @desktop {
+            padding-left: 80px;
+        }
+        @media @tablet {
+            padding-left: 80px;
+            margin-top: 25px;
+        }
+        @media @mobile {
+            width: 100%;
+            margin-top: 25px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        & a {
+            color: white;
+        }
+        &--add {
+            background-color: #3a4b89;
+            border: 1px solid #707070;
+
+            &::before {
+                width: 55px;
+                height: 29px;
+                background-image: url(../img/videocamera-symbol.svg);
+                left: 15px;
+                top: 33%;
+                @media @mobile {
+                    width: 30.5px;
+                    height: 23px;
+                }
+                @media @tablet {
+                    left: 15px;
+                    top: 30%;
+                }
+            }
+        }
+        &--sign-in {
+            background-color: transparent;
+            border: 2px solid black;
+            color: black;
+            &::before {
+                background-image: url(../img/sign-in.png);
+                left: 7px;
+                top: 24%;
+                width: 38px;
+                height: 40px;
+                @media @mobile {
+                    top: 20%;
+                    left: 10px;
+                }
+                @media @tablet {
+                    left: 19px;
+                    top: 20%;
+                }
+            }
+        }
+    }
+}

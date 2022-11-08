@@ -1,0 +1,71 @@
+.edit {
+    overflow: hidden;
+    &__wrapper {
+        padding: 35px 0 35px 0;
+        @media @desktop {
+            padding: 70px 0 70px 0;
+        }
+    }
+    &__form {
+        @media @tablet {
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+        }
+        @media @desktop {
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__chapter {
+        padding: 35px 0;
+        position: relative;
+        &::before {
+            @media @mobile {
+                content: "";
+                position: absolute;
+                width: 100vw;
+                height: 1px;
+                background-color: #e7e7e7;
+                bottom: 0;
+                left: -15px;
+            }
+        }
+        @media @tablet {
+            padding: 30px;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        @media @desktop {
+            display: grid;
+            grid-template-columns: 40% 50%;
+            column-gap: 10%;
+            padding: 60px;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        &:last-child {
+            @media @desktop, @tablet {
+                display: block;
+                text-align: end;
+            }
+        }
+    }
+    &__heading {
+        @media @mobile {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        @media @desktop {
+            font-size: 18px;
+            font-weight: 100;
+        }
+    }
+    &__label {
+        display: block;
+        font-size: 13px;
+        color: #b1b1b1;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        border: 1px solid #bfbfbf;
+        margin-top: 15px;
+        padding: 10px;
+    }
+}

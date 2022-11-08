@@ -1,0 +1,63 @@
+.address {
+    color: black;
+    background-image: url(../img/adress-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media @mobile {
+        background-position: right top;
+    }
+    &__wrapper {
+        padding: 50px 0 40px 0;
+        @media @desktop {
+            padding: 110px 0 100px 0;
+        }
+    }
+    &__header {
+        text-align: center;
+        font-size: 44px;
+        margin-bottom: 15px;
+        @media @desktop {
+            font-size: 60px;
+            margin-bottom: 35px;
+        }
+    }
+    &__description {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 35px;
+        @media @desktop {
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+    }
+    &__label {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        position: relative;
+        @media @desktop, @tablet {
+            width: 50%;
+            margin: 0 auto;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 21px;
+            height: 21px;
+            background-image: url(../img/search.png);
+            background-size: contain;
+            top: 21px;
+            right: 23px;
+        }
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        padding: 15px 35px;
+        @media @desktop {
+            font-size: 20px;
+        }
+    }
+}

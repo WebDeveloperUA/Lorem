@@ -1,0 +1,141 @@
+@@include('template/head.html', { "pagetitle": "Главная страница", "bodyclass":
+"" }) @@include('template/page-header.html')
+
+<main>
+    <section class="editing">
+        <div class="container">
+            <div class="editing__wrapper">
+                <h1 class="editing__header">Lorem ipsum dolor sit.</h1>
+                <p class="editing__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum vel perferendis quos, ad hic iusto illo minus
+                    nostrum rem molestias laboriosam et nobis? Explicabo
+                    delectus repellat modi sed, similique ipsum sequi minus
+                    temporibus nihil voluptatum.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="edit">
+        <div class="container">
+            <div class="edit__wrapper">
+                <form class="edit__form" action="post">
+                    <fieldset class="edit__chapter">
+                        <h3 class="edit__heading">Add/remove lorem</h3>
+                        <div>
+                            <label class="edit__label">
+                                <input type="radio" name="type" />
+                                <span>Add</span>
+                            </label>
+                            <label class="edit__label">
+                                <input type="radio" name="type" />
+                                <span>Remove</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="edit__chapter">
+                        <h3 class="edit__heading">Information about</h3>
+                        <div>
+                            <label class="edit__label">
+                                Types:
+                                <select class="edit__input" name="type" id="">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </label>
+                            <label class="edit__label">
+                                Lorem:
+                                <input class="edit__input" type="text" />
+                            </label>
+                            <label class="edit__label">
+                                Lorem, ipsum dolor.:
+                                <input class="edit__input" type="text" />
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="edit__chapter">
+                        <h3 class="edit__heading">Lorem, ipsum.</h3>
+                        <div>
+                            <label class="edit__label">
+                                Lorem, ipsum.:
+                                <input class="edit__input" type="text" />
+                            </label>
+                            <label class="edit__label">
+                                Lorem ipsum dolor sit.:
+                                <input class="edit__input" type="text" />
+                            </label>
+                            <label class="edit__label">
+                                Lorem ipsum dolor sit amet.:
+                                <input class="edit__input" type="text" />
+                            </label>
+                            <label class="edit__label">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Commodi nemo voluptatem animi
+                                praesentium.
+                                <textarea
+                                    class="edit__input"
+                                    name=""
+                                    id=""
+                                    cols="30"
+                                    rows="4"
+                                ></textarea>
+                            </label>
+                            <label class="edit__label">
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing.:
+                                <select class="edit__input" name="type" id="">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </label>
+                            <label>
+                                <input class="edit__input" type="file" />
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="edit__chapter">
+                        <button class="button edit__button" type="submit">
+                            Submit
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="question">
+        <div class="container">
+            <div class="question__wrapper">
+                <h2 class="question__header">
+                    Have questions? The manager will help!
+                </h2>
+                <form class="question__form" action="">
+                    <div class="question__body question__body--user">
+                        <input
+                            class="question__item"
+                            type="text"
+                            placeholder="Enter your name"
+                        />
+                    </div>
+                    <div class="question__body question__body--phone">
+                        <input
+                            class="question__item"
+                            type="phone"
+                            placeholder="Enter your phone"
+                        />
+                    </div>
+                    <button type="submit" class="button question__button">
+                        Call me
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('template/page-footer.html') @@include('template/popups.html')
+@@include('template/scripts.html')
+
+</body>
+</html>
