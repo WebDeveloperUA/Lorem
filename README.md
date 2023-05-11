@@ -16,4 +16,4 @@
 - Gulp
 
 ### :link: Link
-- <a href="https://webdeveloperua.github.io/Lorem/dist/main.html"> View the project </a>
+- <a href="https://webdeveloperua.github.io/Lorem/dist/index.html"> View the project </a>
